@@ -3,6 +3,6 @@ version: '3.8'
 services:
   frontend:
     container_name: frontend
-    build: .
+    image: rawlin08/static-website:v1
     ports:
       - "85:80"
