@@ -1,8 +1,7 @@
 name: Static website on s3
 
 on:
-    push:
-        branches: [main]
+    workflow_dispatch:
     
 jobs:
  S3website:
