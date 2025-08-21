@@ -19,7 +19,7 @@ jobs:
             aws-secret-access-key: ${{secrets.AWS_SECRET_ACCESS_KEY}}
             aws-region: us-east-1
 
-      - name: Upload to s3
-        run: aws s3 sync . s3://my-webapp-bucket-5f36afe47b9c4c2b --exclude ".git/*" 
+      #- name: Upload to s3
+      #  run: aws s3 sync . s3://my-webapp-bucket-5f36afe47b9c4c2b --exclude ".git/*" 
         
         
