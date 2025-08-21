@@ -6,36 +6,92 @@
   <title>Rawlin Leaito | My Personal Website </title>
   <link rel="stylesheet" href="style.css" />
 </head>
-<body>
+<body class="dark-mode">
+<!-- Dark Mode Toggle -->
+  <button class="theme-toggle" onclick="toggleTheme()">Toggle Dark Mode</button>
+
+  <!-- DevOps Infinity Loop -->
+   <section>
+  <div class="infinity-container">
+     <div style="position: absolute; top: 21%; left: 50%; transform: translate(-50%, -50%); 
+                display: flex; justify-content: space-between; width: 25rem; font-family: sans-serif; font-weight: bold; color: #00ffff;">
+      <span style="color: cyan; font-size: 35px;">DEV</span>
+      <span style="color: cyan;font-size: 35px;">OPS</span>
+    </div>
+    <svg class="infinity" viewBox="-1 -1 12 8">
+      <defs>
+        <path id="infinite" d="M4.5 2.5C4 2 3 1 2 1 a2 2 0 000 4c1.1 0 2-1 3-2s1.9-2 3-2a2 2 0 010 4C6.9 5 6 4 5.5 3.5"></path>
+      </defs>
+      <use href="#infinite" class="outside"></use>
+      <text font-size="5" font-family="sans-serif">
+        
+        <textPath href="#infinite" startOffset="100%">
+          <tspan fill="red">•&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;MONITOR&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tspan>
+          <tspan fill="green">•&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;DEPLOY&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tspan>
+          <tspan fill="orange">•&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;TEST&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tspan>
+          <tspan fill="green">•&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;BUILD&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tspan>
+          <tspan fill="blue">•&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CODE&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;•</tspan>
+          <animate attributeName="startOffset" from="-115%" to="100%" dur="25s" repeatCount="indefinite" />
+        </textPath>
+        <textPath href="#infinite" startOffset="-100%">
+          <tspan fill="red">•&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;MONITOR&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tspan>
+          <tspan fill="green">•&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;DEPLOY&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tspan>
+          <tspan fill="orange">•&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;TEST&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tspan>
+          <tspan fill="green">•&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;BUILD&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tspan>
+          <tspan fill="blur">•&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CODE&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tspan>
+          <animate attributeName="startOffset" from="-120%" to="0%" dur="35s" repeatCount="indefinite" begin="15000s" />
+        </textPath>
+      </text>
+    </svg>
+   
+  </div>
+</section>
+  <!-- Original Personal Website Content -->
   <div class="scroll-container">
     <section class="panel intro">
-      <h1>Hello, World 🌎</h1>
-      <h2>My name is Rawlin</h2>
-      <p>Welcome to my stylish static site </p>
+      <h2>Hello, I'm Rawlin 🌎</h2>
+      <p>Welcome to my portfolio! I'm a passionate tech enthusiast, focused on web development, DevOps, and cloud computing. I love building projects, automating workflows, and learning new technologies.</p>
     </section>
 
     <section class="panel about">
       <h2>About Me</h2>
-      <p>I'm Rawlin, a passionate tech enthusiast learning web and cloud technologies.</p>
+      <p>I'm Rawlin Leaito, a computer science graduate with strong interest in DevOps, cloud platforms, and web technologies. I enjoy designing scalable solutions, automating pipelines, and experimenting with new tools.</p>
+    </section>
+
+    <section class="panel skills">
+      <h2>Skills</h2>
+      <ul>
+        <li>Cloud: AWS, Azure, GCP</li>
+        <li>DevOps: Docker, Kubernetes, CI/CD (GitHub Actions, Jenkins)</li>
+        <li>Programming: Python, Bash scripting, HTML, CSS, JavaScript</li>
+        <li>Infrastructure as Code: Terraform, CloudFormation</li>
+      </ul>
     </section>
 
     <section class="panel projects">
       <h2>Projects</h2>
       <ul>
-        <li>Portfolio Website</li>
-        <li>GitHub Actions CI/CD</li>
+        <li><strong>Portfolio Website:</strong> My personal website showcasing projects and skills.</li>
+        <li><strong>GitHub Actions CI/CD:</strong> Automated deployment pipelines for projects.</li>
+        <li><strong>Facial Expression Mouse Control AI:</strong> BSc final year project using Python and OpenCV.</li>
       </ul>
     </section>
 
     <section class="panel contact">
-      <h2>Contact</h2>
-      <p>📧 rawlinleitao08@gmail.com</p>
-      <p>🌐 <a href="https://github.com/Rawlinrepo" target="_blank">GitHub: Rawlinrepo</a></p>
+      <h2>Contact Me</h2>
+      <p>📧 Email: <a href="mailto:rawlinleitao08@gmail.com">rawlinleitao08@gmail.com</a></p>
+      <p>🌐 GitHub: <a href="https://github.com/Rawlinrepo" target="_blank">Rawlinrepo</a></p>
+      <p>LinkedIn: <a href="https://www.linkedin.com/in/rawlin-leaito/" target="_blank">linkedin.com/in/rawlin-leaito</a></p>
     </section>
   </div>
 
   <footer>
     <p>&copy; 2025 Rawlin Leaito</p>
   </footer>
+  <script>
+    function toggleTheme() {
+      document.body.classList.toggle('dark-mode');
+    }
+  </script>
 </body>
 </html>
